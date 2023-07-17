@@ -1,0 +1,228 @@
+.participant-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 280px;
+  padding: 10px;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  /* width: 100%; */
+}
+
+.call-container {
+  position: relative;
+  width: 100vw;
+  height: 88vh;
+}
+
+.in_the_call {
+  font-family: 'Segoe UI', 'Segoe UI Web (West European)', 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto,
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 12px;
+  font-weight: 400;
+  flex-basis: auto;
+  height: auto;
+  width: auto;
+  flex-shrink: 1;
+  color: rgb(96, 94, 92);
+  margin: 0.5rem;
+}
+
+.controllbar-container {
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+  width: 100%;
+  display: flex;
+  padding: 5px;
+}
+
+.controllbar-container .ms-Stack {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-controll-bar-button {
+  outline: transparent;
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  border-radius: 0px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px 16px;
+  text-decoration: none;
+  text-align: center;
+  min-width: 3.5rem;
+  color: rgb(50, 49, 48);
+  background: none;
+  min-height: 3.5rem;
+  max-width: 8rem;
+}
+
+.custom-controll-bar-button .flexContainer-195 {
+  display: contents !important;
+}
+
+.custom-controll-bar-button .ms-Button-flexContainer {
+  flex-direction: column;
+}
+
+.custom-controll-bar-button .ms-Button-label {
+  font-weight: 400;
+  font-size: 0.625rem;
+  margin-top: 4px;
+}
+
+.video-title-hand {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.5rem;
+}
+
+.custom-avtar-video-gallary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.video-gallry-raise-hand {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+}
+
+.custom-avtar-video-gallary .ms-Persona-details {
+  display: none;
+}
+
+.hand-fill-icon svg {
+  fill: #000;
+}
+
+.hand-fill-icon svg path {
+  stroke: #000;
+}
+
+.video-gallary i[data-icon-name='VideoTilePinned'] {
+  display: none;
+}
+
+.video-gallary .ms-Button.ms-Button--icon {
+  display: none;
+}
+
+.contextual-video-tile-icon-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.5rem;
+}
+
+div[data-ui-id='video-tile']:hover .contextual-video-tile-icons {
+  display: none;
+}
+
+div[data-ui-id='video-tile']:hover .custom-contextual-button {
+  display: block;
+}
+
+.contextual-menu-render-video-tile:hover .custom-contextual-button {
+  display: block;
+}
+
+.video-gallary div[data-ui-id='video-tile'] .ms-Stack:last-child {
+  width: fit-content !important;
+}
+
+.custom-contextual-button {
+  display: none;
+  border: 0px;
+  min-width: fit-content !important;
+  height: fit-content !important;
+  background: transparent;
+  padding: 0px;
+  margin-right: 5px;
+}
+
+.custom-contextual-button i {
+  display: none;
+}
+
+.avtar-round {
+  height: 100%;
+  width: 100%;
+  background: rebeccapurple;
+  color: white;
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/**********************************************
+  Chat css
+***********************************************/
+.chat-panel .ms-Panel-content {
+  padding: 0;
+}
+
+.c-chat-container {
+  position: relative;
+}
+
+.chat-panel .ms-Panel-scrollableContent {
+  height: 100%;
+  overflow-y: inherit !important;
+}
+
+.chat-panel .ms-Panel-content {
+  height: 100%;
+}
+
+.chat-panel .c-chat-container {
+  height: 84%;
+  padding-left: 17px;
+}
+
+#chat-composite-message-contextual-menu svg {
+  vertical-align: baseline !important;
+}
+
+.spinner-center {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.send-message .ms-Stack {
+  margin-top: 0;
+}
+
+.custom-controll-bar-button:hover{
+  color: blue;
+}
+
+.green{
+  color: #28a745;
+}
+.red{
+  color: #dc3545;
+}
+
+.raiseHand {
+  color: rgb(255, 194, 62);
+}
