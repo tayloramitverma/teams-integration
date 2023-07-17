@@ -3,7 +3,7 @@
  * Licensed under the MIT License. See LICENSE.md in the project root for license information.
  *---------------------------------------------------------------------------------------------*/
 
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect, useMemo, useCallback } from "react";
 import { AzureCommunicationTokenCredential } from "@azure/communication-common";
 import {
   CallClientProvider,
@@ -38,6 +38,10 @@ export const TestCallTeamsUserContent = ({
     "Disconnecting",
     "InLobby",
   ].includes(callState);
+
+  const onFetchProfile = useCallback(async (userId, defaultProfile) => {
+    return { displayName: 'Custom User Name' };
+  }, []);
 
   const callAdapterOptions = useMemo(() => {
     const videoBackgroundImages = [
@@ -79,6 +83,7 @@ export const TestCallTeamsUserContent = ({
     ];
     return {
       videoBackgroundImages: videoBackgroundImages,
+      onFetchProfile
     };
   }, []);
 
